@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/main.scss">
+
+    <!-- BS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <!-- Video.js library -->
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+    <!-- Video.js HLS Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/videojs-http-streaming@2.6.1/dist/videojs-http-streaming.min.js"></script>
+</head>
+<body>
+
+    <header class="bg-primary text-white text-center py-3">
+        <h1>TV Online</h1>
+    </header>
+
+    <main class="container mt-4">
+        <div class="row" id="channels">
+            <!-- Os cards dos canais serão inseridos aqui -->
+            
+        </div>
+    </main>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Assistir Canal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video id="video-player" class="video-js vjs-default-skin" controls preload="auto" width="100%" height="400">
+
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+     <!-- Custom JS -->
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
