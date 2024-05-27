@@ -1,29 +1,61 @@
-
 $primary-color: #007bff;
 $secondary-color: #6c757d;
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #000216;
+}
+
+main {
+    background-color: transparent;
 }
 
 header {
-    background-color: $primary-color;
     color: white;
     padding: 1rem 0;
+    background-image: url(../images/62.png);
+    background-position: center bottom;
+    background-repeat: none;
+    background-size: cover;
 }
 
 .card {
-    transition: transform 0.2s;
+    transition: transform ease 0.3s;
+    width: 200px;
+    border: none;
 
     &:hover {
-        transform: scale(1.05);
+        box-shadow: 10px 5px 5px #434766;
+        transform: scale(1.02);
+
+    }
+    button {
+        font-weight: 600;
+        background-color: transparent;
+        color: #000216;
+        width: 8rem;
+        border: 1px solid #000216;
+        &:hover {
+            background-color: #000216;
+            color: #fdfffe;
+        }
     }
 }
 
 .card-img-top {
     width: 100%;
-    height: 150px; /* Ajuste conforme necessário */
-    object-fit: cover; /* Mantém a proporção das imagens */
+    height: 110px; /* Ajuste conforme necessário */
+    object-fit:cover; /* Mantém a proporção das imagens */
     object-position: center; /* Centraliza a imagem */
 }
 

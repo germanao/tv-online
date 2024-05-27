@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     const channels = [
-        { name: 'Combate', img: 'https://inseries.com.br/wp-content/uploads/2023/12/canal-combate-logo.png', stream: 'https://brflu.walk-tv.com/5865/tracks-v1a1/mono.m3u8' },
+        { name: 'Combate', img: 'https://www.meioemensagem.com.br/wp-content/uploads/2016/04/Combate_3D_Com_Slogan_Fundo_Escuro-300.jpg', stream: 'https://brflu.walk-tv.com/5865/tracks-v1a1/mono.m3u8' },
         { name: 'Premiere', img: 'https://s3.glbimg.com/v1/AUTH_f486c675dfaf4c6e96c25f0c21f85eb5/prod/home-share-1b75cdaa.png', stream: 'https://brflu.walk-tv.com/5922/tracks-v1a1/mono.m3u8' },
         { name: 'ESPN', img: 'https://lncimg.lance.com.br/cdn-cgi/image/width=1024,height=768,quality=75,fit=pad/uploads/2022/12/21/63a350ff5e2df.png', stream: 'https://brflu.walk-tv.com/5912/tracks-v1a1/mono.m3u8' },
         
@@ -19,12 +19,12 @@ $(document).ready(function() {
 
     channels.forEach(channel => {
         $('#channels').append(`
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-4 d-flex justify-content-center">
                 <div class="card">
                     <img src="${channel.img}" class="card-img-top" alt="Imagem do ${channel.name}">
                     <div class="card-body text-center">
                         <h5 class="card-title">${channel.name}</h5>
-                        <button class="btn btn-primary" onclick="playChannel('${channel.stream}')">Assistir</button>
+                        <button class="btn btn-success" onclick="playChannel('${channel.stream}')">Assistir</button>
                     </div>
                 </div>
             </div>
