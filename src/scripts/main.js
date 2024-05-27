@@ -1,3 +1,5 @@
+// src/scripts/main.js
+
 $(document).ready(function() {
     const channels = [
         { name: 'Combate', img: 'https://inseries.com.br/wp-content/uploads/2023/12/canal-combate-logo.png', stream: 'https://brflu.walk-tv.com/5865/tracks-v1a1/mono.m3u8' },
@@ -27,11 +29,11 @@ $(document).ready(function() {
         player.pause();
         player.currentTime(0); // Reseta o vídeo para o início
     });
-});
 
-function playChannel(stream) {
-    const player = videojs('video-player');
-    player.src({ src: stream, type: 'application/x-mpegURL' });
-    player.play();
-    $('#videoModal').modal('show');
-}
+    // Definir a função playChannel globalmente
+    window.playChannel = function(stream) {
+        player.src({ src: stream, type: 'application/x-mpegURL' });
+        player.play();
+        $('#videoModal').modal('show');
+    };
+});
