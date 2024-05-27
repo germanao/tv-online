@@ -10,7 +10,7 @@ $(document).ready(function() {
         { name: 'TNT', img: 'https://i0.wp.com/assets.b9.com.br/wp-content/uploads/2016/02/tntlogo1.png?fit=1060%2C596&ssl=1', stream: 'https://cdn-3.nxplay.com.br/TNT_TK/index.m3u8' },
         { name: 'TC Premium', img: 'https://s2-globo-play.glbimg.com/BjX8DOLKdpOgNuD7Z8szHZaU42U=/0x1080/https://s2-globo-play.glbimg.com/RTnf6rdQF2eS0lScVyt01huZjDI=/https://i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2022/o/z/OKyHcrRdysj5Jw8IKnCQ/tc-premim-1920x1080.jpg', stream: 'https://brflu.walk-tv.com/5879/tracks-v1a1/mono.m3u8' },
         { name: 'Globo SP', img: 'https://s3.glbimg.com/v1/AUTH_b58693ed41d04a39826739159bf600a0/photos/logo_redes.png', stream: 'https://cdn-3.nxplay.com.br/GLOBO_SP_TK/index.m3u8' },
-        { name: 'Globo SP', img: '', stream: 'https://mts1.iptv-playoutcenter.de/mts/mts-web/playlist.m3u8' },
+        { name: 'Globo SP', img: '', stream: 'http://xtvocanal23x.api.channel.livestream.com/3.0/playlist.m3u8' },
         
 
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
                     <img src="${channel.img}" class="card-img-top" alt="Imagem do ${channel.name}">
                     <div class="card-body text-center">
                         <h5 class="card-title">${channel.name}</h5>
-                        <button class="btn btn-success" onclick="playChannel('${channel.stream}')">Assistir</button>
+                        <button class="btn" onclick="playChannel('${channel.stream}')">Assistir</button>
                     </div>
                 </div>
             </div>

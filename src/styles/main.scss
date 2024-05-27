@@ -8,11 +8,13 @@ $secondary-color: #6c757d;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
-    
+
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
+
+    font-style: normal;
     background-color: #000216;
 }
 
@@ -21,49 +23,65 @@ main {
 }
 
 header {
-    color: white;
+    color: #08042e;
     padding: 1rem 0;
-    background-image: url(../images/62.png);
-    background-position: center bottom;
+    height: 20vh;
+    background-image: url(../images/header1.png);
+    background-position: center center;
     background-repeat: none;
     background-size: cover;
+    font-family: "Bungee Inline", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 2px 2px 10px #e4e7ff;
 }
 
 .card {
     transition: transform ease 0.3s;
     width: 200px;
-    border: none;
+    border: 1px solid #fdfffe;
+    background-color: transparent;
+    color: #fdfffe;
 
     &:hover {
-        box-shadow: 10px 5px 5px #434766;
+        box-shadow: 8px 5px 5px #434766;
         transform: scale(1.02);
 
     }
+
     button {
         font-weight: 600;
         background-color: transparent;
-        color: #000216;
+        color: #fdfffe;
         width: 8rem;
-        border: 1px solid #000216;
+        border: 1px solid #fdfffe;
+
         &:hover {
-            background-color: #000216;
-            color: #fdfffe;
+            background-color: #ffffff;
+            color: #000216;
+            border: 1px solid #fdfffe;
         }
     }
 }
 
 .card-img-top {
     width: 100%;
-    height: 110px; /* Ajuste conforme necessário */
-    object-fit:cover; /* Mantém a proporção das imagens */
-    object-position: center; /* Centraliza a imagem */
+    height: 110px;
+    /* Ajuste conforme necessário */
+    object-fit: cover;
+    /* Mantém a proporção das imagens */
+    object-position: center;
+    /* Centraliza a imagem */
 }
 
 .modal-content {
-    background-color: $secondary-color;
+    background-color: #080a1f;
     color: white;
     width: 100%;
     height: auto;
+
+
 
     #video-player {
         width: 100%;
