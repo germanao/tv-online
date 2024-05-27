@@ -39,8 +39,28 @@ header {
     "YROT" 0;
     text-shadow: 2px 4px 4px #c4cbfc;
 
+
     h1 {
         font-size: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        background-size: contain; /* Ajusta a imagem para se ajustar na largura */
+        height: 30vh; /* Ajuste conforme necessário para a altura no celular */
+
+        h1 {
+            font-size: 2.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+        }
+    }
+
+    @media (max-width: 576px) {
+        background-size: contain; /* Ajusta a imagem para se ajustar na largura */
+        height: 20vh; /* Ajuste conforme necessário para a altura no celular */
+        background-repeat: no-repeat;
+
+        h1 {
+            font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+        }
     }
 }
 
@@ -95,3 +115,6 @@ header {
 
     }
 }
+
+
+
