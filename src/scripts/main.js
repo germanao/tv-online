@@ -1,5 +1,3 @@
-// src/scripts/main.js
-
 $(document).ready(function() {
     const channels = [
         { name: 'Combate', img: 'https://inseries.com.br/wp-content/uploads/2023/12/canal-combate-logo.png', stream: 'https://brflu.walk-tv.com/5865/tracks-v1a1/mono.m3u8' },
